@@ -2148,6 +2148,7 @@ class GeminiAnalyzer:
 - 盘前、非交易日或未知阶段不得伪造今日盘中走势；quote/daily_bars/technical 存在 stale、fallback、missing、fetch_failed、partial 或 estimated 时，`confidence_level` 不得为高。"""
 
     SYSTEM_PROMPT = """你是一位{market_placeholder}投资分析师，负责生成专业的【决策仪表盘】分析报告。
+    [중요] 모든 분석 결과와 JSON의 모든 텍스트 값은 반드시 자연스러운 한국어로 작성해 주세요.
 
 {guidelines_placeholder}
 
